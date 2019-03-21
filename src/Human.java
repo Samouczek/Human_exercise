@@ -30,7 +30,7 @@ public class Human {
         System.out.println("5 - bardzo wysoka aktywność (zawodowi sportowcy, osoby codziennie trenujące)");
         quantityOfMovement = in.nextInt();
     }
-
+    /*
     public static void main(String[] args) throws FileNotFoundException {
     Human anna = new Human();
     System.out.println(anna);
@@ -42,6 +42,7 @@ public class Human {
     anna.saveToTxt(anna);
 
      }
+    */
 
      public void saveToTxt (Human txt) throws FileNotFoundException {
          PrintWriter save = new PrintWriter("Human.txt");
@@ -155,5 +156,8 @@ public class Human {
 
     }
 
+    public String returnName() {
+         return this.name;
+    }
 
 }
